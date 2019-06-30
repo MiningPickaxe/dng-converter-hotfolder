@@ -26,7 +26,7 @@ The config needs to be in valid json format.
 - **chokidarStabilityThreshold** and **chokidarPollInterval**: This is a option to control the checks for new images. As RAW images are rather large it takes some time to copy them and we don't want to start the conversion process on a file that is not completed yet. To avoid this, we check the size of the files every `chokidarPollIntervall` miliseconds and if it doesn't change over the course of `chokidarStabilityThreshold` miliseconds, it is considered completed. *The default values should work just fine for you, if you experience multiple failed attempts, you might need to change these values*
 
 ## Usage
-Just execute `node index.js` to start the script (Or adjust the path to index.js when running the command from outside the folder). 
+Just execute `node index.js` to start the script (Or adjust the path to index.js when running the command from outside the folder).
 
 ## Other notes
 Files that failed to get converted (maybe not a raw or failed transmission/copy) will get moved to the originals path, a message in the console will appear with the name of the file to notify you of the failed attempt. If you enable `deleteConverted` make sure you read the description of that option.
@@ -34,3 +34,23 @@ This script can run indefinitly and monitor the folder or you start it with the 
 
 If you want to help improve this script, feel free to create pull requests.
 If there are any other bugs, please create an issue.
+
+
+## Licence
+This project is licenced under the ISC licence https://en.wikipedia.org/wiki/ISC_license
+
+```
+Copyright (c) 2017, Mining_Pickaxe
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+```
