@@ -25,6 +25,9 @@ The config needs to be in valid json format.
 - **deleteConverted** (Default: *false*): ***CAUTION*** This is a dangerous option and should only be turned on if you have a copy of the images you put in the watchPath folder. After conversion of the image, it gets deleted instead of moved into the originalsPath folder. *If the conversion fails, the image is deleted as well.* As I don't use this option, I didn't implement it in a way that does not delete failed attempts. Feel free to create a pull request if you want to fix this.
 - **chokidarStabilityThreshold** and **chokidarPollInterval**: This is a option to control the checks for new images. As RAW images are rather large it takes some time to copy them and we don't want to start the conversion process on a file that is not completed yet. To avoid this, we check the size of the files every `chokidarPollIntervall` miliseconds and if it doesn't change over the course of `chokidarStabilityThreshold` miliseconds, it is considered completed. *The default values should work just fine for you, if you experience multiple failed attempts, you might need to change these values*
 
+## Usage
+Just execute `node index.js` to start the script (Or adjust the path to index.js when running the command from outside the folder). 
+
 ## Other notes
 Files that failed to get converted (maybe not a raw or failed transmission/copy) will get moved to the originals path, a message in the console will appear with the name of the file to notify you of the failed attempt. If you enable `deleteConverted` make sure you read the description of that option.
 This script can run indefinitly and monitor the folder or you start it with the folder already populated, it doesn't matter.
