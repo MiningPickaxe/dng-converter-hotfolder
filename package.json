@@ -4,8 +4,7 @@
   "description": "Adds highly configurable hotfolder options for the Adobe DNG Converter",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js",
-    "run" : "node index.js"
+    "test": "nodemon index.js"
   },
   "repository": {
     "type": "git",
