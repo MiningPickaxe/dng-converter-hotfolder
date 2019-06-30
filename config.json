@@ -1,0 +1,11 @@
+{
+  "verbose" : false,
+  "watchPath" : "D:/DNG Converter Hotfolder/test/new",
+  "resultPath" : "D:/DNG Converter Hotfolder/test/results",
+  "originalsPath" : "D:/DNG Converter Hotfolder/test/originals",
+  "dngConverterBin" : "C:/Program Files/Adobe/Adobe DNG Converter/Adobe DNG Converter.exe",
+  "dngConverterArgs" : ["-c", "-p1", "-cr6.6", "-dng1.4"],
+  "deleteConverted" : false,
+  "chokidarStabilityThreshold" : 2500,
+  "chokidarPollIntervall" : 80
+}
