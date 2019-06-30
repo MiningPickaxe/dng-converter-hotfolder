@@ -1,0 +1,26 @@
+{
+  "name": "dng-converter-hotfolder",
+  "version": "1.0.0",
+  "description": "Adds highly configurable hotfolder options for the Adobe DNG Converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TBD"
+  },
+  "keywords": [
+    "Adobe",
+    "Raw",
+    "DNG",
+    "Converter",
+    "Hotfolder",
+    "automatic"
+  ],
+  "author": "Lennart Hagemann",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.0.1"
+  }
+}
